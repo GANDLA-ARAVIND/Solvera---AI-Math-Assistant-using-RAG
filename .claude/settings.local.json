@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"c:\\\\Users\\\\gugul\\\\Downloads\\\\Solvera\" diff main...HEAD --stat)",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(python:*)"
+    ]
+  }
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "jee_b_001",
+    "difficulty": "basic",
+    "topic": "algebra",
+    "question": "Solve the quadratic equation: x² - 5x + 6 = 0",
+    "correct_answer": "[2, 3]",
+    "answer_type": "set",
+    "solution_query": "Solve x^2 - 5x + 6 = 0 step by step"
+  },
+  {
+    "id": "jee_b_002",
+    "difficulty": "basic",
+    "topic": "algebra",
+    "question": "Find the value of: (a + b)² when a = 3 and b = 4",
+    "correct_answer": "49",
+    "answer_type": "numeric",
+    "solution_query": "Evaluate (a + b)^2 when a=3 and b=4 step by step"
+  },
+  {
+    "id": "jee_b_003",
+    "difficulty": "basic",
+    "topic": "trigonometry",
+    "question": "Find the value of sin(30°) + cos(60°)",
+    "correct_answer": "1",
+    "answer_type": "numeric",
+    "solution_query": "Find the value of sin(30°) + cos(60°) step by step"
+  },
+  {
+    "id": "jee_b_004",
+    "difficulty": "basic",
+    "topic": "calculus",
+    "question": "Find the derivative of f(x) = x³",
+    "correct_answer": "3*x**2",
+    "answer_type": "expression",
+    "solution_query": "Find the derivative of x^3 step by step"
+  },
+  {
+    "id": "jee_b_005",
+    "difficulty": "basic",
+    "topic": "algebra",
+    "question": "If log₁₀(100) = x, find x",
+    "correct_answer": "2",
+    "answer_type": "numeric",
+    "solution_query": "Find log base 10 of 100 step by step"
+  },
+  {
+    "id": "jee_b_006",
+    "difficulty": "basic",
+    "topic": "geometry",
+    "question": "Find the distance between the points (1, 2) and (4, 6)",
+    "correct_answer": "5",
+    "answer_type": "numeric",
+    "solution_query": "Find the distance between points (1,2) and (4,6) step by step"
+  },
+  {
+    "id": "jee_b_007",
+    "difficulty": "basic",
+    "topic": "trigonometry",
+    "question": "Find the value of tan(45°)",
+    "correct_answer": "1",
+    "answer_type": "numeric",
+    "solution_query": "Find the value of tan(45 degrees) step by step"
+  },
+  {
+    "id": "jee_b_008",
+    "difficulty": "basic",
+    "topic": "calculus",
+    "question": "Evaluate the integral: ∫ 2x dx",
+    "correct_answer": "x**2",
+    "answer_type": "expression",
+    "solution_query": "Evaluate the integral of 2x dx step by step"
+  },
+  {
+    "id": "jee_b_009",
+    "difficulty": "basic",
+    "topic": "algebra",
+    "question": "Simplify: (x² - 9) / (x - 3)",
+    "correct_answer": "x + 3",
+    "answer_type": "expression",
+    "solution_query": "Simplify (x^2 - 9)/(x - 3) step by step"
+  },
+  {
+    "id": "jee_b_010",
+    "difficulty": "basic",
+    "topic": "statistics",
+    "question": "Find the mean of the numbers: 2, 4, 6, 8, 10",
+    "correct_answer": "6",
+    "answer_type": "numeric",
+    "solution_query": "Find the mean of 2, 4, 6, 8, 10 step by step"
+  },
+  {
+    "id": "jee_m_001",
+    "difficulty": "medium",
+    "topic": "algebra",
+    "question": "Find the sum of the roots of the equation: 2x² - 7x + 3 = 0",
+    "correct_answer": "7/2",
+    "answer_type": "numeric",
+    "solution_query": "Find the sum of roots of 2x^2 - 7x + 3 = 0 step by step using Vieta's formulas"
+  },
+  {
+    "id": "jee_m_002",
+    "difficulty": "medium",
+    "topic": "calculus",
+    "question": "Find the derivative of f(x) = x² · sin(x)",
+    "correct_answer": "2*x*sin(x) + x**2*cos(x)",
+    "answer_type": "expression",
+    "solution_query": "Find the derivative of x^2 * sin(x) using product rule step by step"
+  },
+  {
+    "id": "jee_m_003",
+    "difficulty": "medium",
+    "topic": "trigonometry",
+    "question": "Simplify: sin²(x) + cos²(x) + tan²(x)",
+    "correct_answer": "sec(x)**2",
+    "answer_type": "expression",
+    "solution_query": "Simplify sin^2(x) + cos^2(x) + tan^2(x) step by step"
+  },
+  {
+    "id": "jee_m_004",
+    "difficulty": "medium",
+    "topic": "algebra",
+    "question": "Find the number of ways to arrange 5 people in a row",
+    "correct_answer": "120",
+    "answer_type": "numeric",
+    "solution_query": "Find the number of permutations of 5 people in a row step by step"
+  },
+  {
+    "id": "jee_m_005",
+    "difficulty": "medium",
+    "topic": "calculus",
+    "question": "Evaluate: lim(x→0) sin(x)/x",
+    "correct_answer": "1",
+    "answer_type": "numeric",
+    "solution_query": "Evaluate the limit of sin(x)/x as x approaches 0 step by step"
+  },
+  {
+    "id": "jee_m_006",
+    "difficulty": "medium",
+    "topic": "geometry",
+    "question": "Find the area of a triangle with vertices at (0,0), (4,0), and (0,3)",
+    "correct_answer": "6",
+    "answer_type": "numeric",
+    "solution_query": "Find the area of triangle with vertices (0,0), (4,0), (0,3) step by step"
+  },
+  {
+    "id": "jee_m_007",
+    "difficulty": "medium",
+    "topic": "algebra",
+    "question": "Find the value of ⁵C₂ (5 choose 2)",
+    "correct_answer": "10",
+    "answer_type": "numeric",
+    "solution_query": "Calculate 5 choose 2 step by step"
+  },
+  {
+    "id": "jee_m_008",
+    "difficulty": "medium",
+    "topic": "calculus",
+    "question": "Find the integral: ∫ (3x² + 2x) dx",
+    "correct_answer": "x**3 + x**2",
+    "answer_type": "expression",
+    "solution_query": "Evaluate the integral of 3x^2 + 2x step by step"
+  },
+  {
+    "id": "jee_m_009",
+    "difficulty": "medium",
+    "topic": "trigonometry",
+    "question": "Find the general solution of sin(x) = 1/2",
+    "correct_answer": "pi/6",
+    "answer_type": "expression",
+    "solution_query": "Solve sin(x) = 1/2 and find the principal value step by step"
+  },
+  {
+    "id": "jee_m_010",
+    "difficulty": "medium",
+    "topic": "statistics",
+    "question": "Find the variance of the data: 2, 4, 4, 4, 5, 5, 7, 9",
+    "correct_answer": "4",
+    "answer_type": "numeric",
+    "solution_query": "Find the variance of 2, 4, 4, 4, 5, 5, 7, 9 step by step"
+  },
+  {
+    "id": "jee_h_001",
+    "difficulty": "hard",
+    "topic": "calculus",
+    "question": "Find the derivative of f(x) = eˣ · ln(x)",
+    "correct_answer": "exp(x)*log(x) + exp(x)/x",
+    "answer_type": "expression",
+    "solution_query": "Find the derivative of e^x * ln(x) using product rule step by step"
+  },
+  {
+    "id": "jee_h_002",
+    "difficulty": "hard",
+    "topic": "algebra",
+    "question": "If the roots of x³ - 6x² + 11x - 6 = 0 are α, β, γ, find α² + β² + γ²",
+    "correct_answer": "14",
+    "answer_type": "numeric",
+    "solution_query": "If roots of x^3 - 6x^2 + 11x - 6 = 0 are a, b, c then find a^2 + b^2 + c^2 using Newton's identities step by step"
+  },
+  {
+    "id": "jee_h_003",
+    "difficulty": "hard",
+    "topic": "calculus",
+    "question": "Evaluate: ∫₀¹ x · eˣ dx",
+    "correct_answer": "1",
+    "answer_type": "numeric",
+    "solution_query": "Evaluate the definite integral of x*e^x from 0 to 1 using integration by parts step by step"
+  },
+  {
+    "id": "jee_h_004",
+    "difficulty": "hard",
+    "topic": "trigonometry",
+    "question": "Prove and find the value of: cos(π/7) · cos(2π/7) · cos(3π/7)",
+    "correct_answer": "1/8",
+    "answer_type": "numeric",
+    "solution_query": "Find the value of cos(pi/7)*cos(2pi/7)*cos(3pi/7) step by step"
+  },
+  {
+    "id": "jee_h_005",
+    "difficulty": "hard",
+    "topic": "algebra",
+    "question": "Find the number of solutions of the equation x² + |x| - 6 = 0",
+    "correct_answer": "2",
+    "answer_type": "numeric",
+    "solution_query": "Find the number of solutions of x^2 + |x| - 6 = 0 step by step"
+  },
+  {
+    "id": "jee_h_006",
+    "difficulty": "hard",
+    "topic": "calculus",
+    "question": "Find the maximum value of f(x) = x · e^(-x) for x ≥ 0",
+    "correct_answer": "1/E",
+    "answer_type": "expression",
+    "solution_query": "Find the maximum value of x*e^(-x) for x >= 0 step by step"
+  },
+  {
+    "id": "jee_h_007",
+    "difficulty": "hard",
+    "topic": "geometry",
+    "question": "Find the length of the tangent from the point (5, 4) to the circle x² + y² = 9",
+    "correct_answer": "sqrt(32)",
+    "answer_type": "expression",
+    "solution_query": "Find the length of tangent from point (5,4) to circle x^2 + y^2 = 9 step by step"
+  },
+  {
+    "id": "jee_h_008",
+    "difficulty": "hard",
+    "topic": "algebra",
+    "question": "Find the sum of the series: 1 + 1/2 + 1/4 + 1/8 + ... (infinite GP)",
+    "correct_answer": "2",
+    "answer_type": "numeric",
+    "solution_query": "Find the sum of infinite GP 1 + 1/2 + 1/4 + 1/8 + ... step by step"
+  },
+  {
+    "id": "jee_h_009",
+    "difficulty": "hard",
+    "topic": "calculus",
+    "question": "Find the area enclosed between y = x² and y = x",
+    "correct_answer": "1/6",
+    "answer_type": "numeric",
+    "solution_query": "Find the area enclosed between y = x^2 and y = x using integration step by step"
+  },
+  {
+    "id": "jee_h_010",
+    "difficulty": "hard",
+    "topic": "statistics",
+    "question": "A bag contains 3 red and 5 blue balls. Two balls are drawn without replacement. Find the probability that both are red.",
+    "correct_answer": "3/28",
+    "answer_type": "numeric",
+    "solution_query": "Find the probability that both balls are red when 2 balls drawn from bag with 3 red and 5 blue without replacement step by step"
+  }
+]

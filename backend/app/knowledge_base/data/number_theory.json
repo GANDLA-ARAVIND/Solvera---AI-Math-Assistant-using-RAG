@@ -1,0 +1,222 @@
+[
+  {
+    "id": "nt_001",
+    "topic": "number_theory",
+    "subtopic": "divisibility",
+    "title": "Division Algorithm",
+    "content": "For any integers a and b with b > 0, there exist unique integers q (quotient) and r (remainder) such that a = bq + r where 0 <= r < b. This is the foundation of divisibility theory and underpins the Euclidean algorithm.",
+    "formula_latex": "a = bq + r, \\quad 0 \\leq r < b",
+    "example": "17 divided by 5: 17 = 5(3) + 2, so quotient = 3, remainder = 2.",
+    "difficulty": "basic",
+    "tags": ["division", "quotient", "remainder", "division algorithm"]
+  },
+  {
+    "id": "nt_002",
+    "topic": "number_theory",
+    "subtopic": "divisibility",
+    "title": "Divisibility Rules for Common Numbers",
+    "content": "A number is divisible by 2 if its last digit is even; by 3 if the sum of its digits is divisible by 3; by 4 if the last two digits form a number divisible by 4; by 5 if it ends in 0 or 5; by 6 if divisible by both 2 and 3; by 8 if the last three digits form a number divisible by 8; by 9 if the sum of digits is divisible by 9; by 11 if the alternating sum of digits is divisible by 11.",
+    "formula_latex": "n \\mid a \\iff a = nk \\text{ for some integer } k",
+    "example": "Check if 2376 is divisible by 11: alternating sum = 2 - 3 + 7 - 6 = 0, and 11 | 0, so 11 | 2376.",
+    "difficulty": "basic",
+    "tags": ["divisibility rules", "divisibility tests", "factors"]
+  },
+  {
+    "id": "nt_003",
+    "topic": "number_theory",
+    "subtopic": "divisibility",
+    "title": "Properties of Divisibility",
+    "content": "Key properties: (1) If a | b and a | c, then a | (b + c) and a | (b - c). (2) If a | b, then a | bc for any integer c. (3) If a | b and b | c, then a | c (transitivity). (4) If a | b and b | a, then a = +/- b. These properties are essential for proofs in number theory.",
+    "formula_latex": "a \\mid b \\text{ and } a \\mid c \\implies a \\mid (bx + cy) \\text{ for all integers } x, y",
+    "example": "Since 6 | 18 and 6 | 24, we get 6 | (18 + 24) = 6 | 42, and indeed 42 = 6 * 7.",
+    "difficulty": "basic",
+    "tags": ["divisibility", "transitivity", "linear combination"]
+  },
+  {
+    "id": "nt_004",
+    "topic": "number_theory",
+    "subtopic": "gcd_lcm",
+    "title": "Euclidean Algorithm for GCD",
+    "content": "The Euclidean algorithm finds the GCD of two integers by repeatedly applying the division algorithm. Given a and b with a > b > 0, apply a = bq + r, then replace a with b and b with r, repeating until the remainder is 0. The last non-zero remainder is gcd(a, b). This is one of the oldest and most efficient algorithms in mathematics.",
+    "formula_latex": "\\gcd(a, b) = \\gcd(b, a \\mod b), \\quad \\gcd(a, 0) = a",
+    "example": "Find gcd(252, 105): 252 = 105(2) + 42; 105 = 42(2) + 21; 42 = 21(2) + 0. So gcd(252, 105) = 21.",
+    "difficulty": "intermediate",
+    "tags": ["gcd", "euclidean algorithm", "greatest common divisor"]
+  },
+  {
+    "id": "nt_005",
+    "topic": "number_theory",
+    "subtopic": "gcd_lcm",
+    "title": "Relationship Between GCD and LCM",
+    "content": "For any two positive integers a and b, the product of their GCD and LCM equals the product of the numbers themselves. This fundamental relationship allows us to compute LCM efficiently once GCD is known. It extends to: lcm(a, b) = |a * b| / gcd(a, b).",
+    "formula_latex": "\\gcd(a, b) \\times \\text{lcm}(a, b) = |a \\times b|",
+    "example": "For a = 12, b = 18: gcd(12, 18) = 6, so lcm(12, 18) = (12 * 18) / 6 = 216 / 6 = 36.",
+    "difficulty": "basic",
+    "tags": ["gcd", "lcm", "product relationship"]
+  },
+  {
+    "id": "nt_006",
+    "topic": "number_theory",
+    "subtopic": "gcd_lcm",
+    "title": "Bezout's Identity",
+    "content": "For any integers a and b (not both zero), there exist integers x and y such that ax + by = gcd(a, b). These coefficients x and y can be found using the Extended Euclidean Algorithm by back-substituting through the steps of the standard algorithm. This identity is crucial for solving linear Diophantine equations.",
+    "formula_latex": "\\exists \\, x, y \\in \\mathbb{Z} : ax + by = \\gcd(a, b)",
+    "example": "For a = 35, b = 15: gcd = 5. Using extended algorithm: 35(1) + 15(-2) = 35 - 30 = 5, so x = 1, y = -2.",
+    "difficulty": "intermediate",
+    "tags": ["bezout identity", "extended euclidean algorithm", "linear combination", "diophantine"]
+  },
+  {
+    "id": "nt_007",
+    "topic": "number_theory",
+    "subtopic": "prime_numbers",
+    "title": "Fundamental Theorem of Arithmetic",
+    "content": "Every integer greater than 1 can be represented uniquely as a product of prime numbers, up to the order of the factors. This is also known as the Unique Prime Factorization Theorem. It guarantees that prime factorization is a well-defined operation and forms the backbone of number theory.",
+    "formula_latex": "n = p_1^{a_1} \\cdot p_2^{a_2} \\cdot \\ldots \\cdot p_k^{a_k}, \\quad p_1 < p_2 < \\ldots < p_k",
+    "example": "360 = 2^3 * 3^2 * 5^1. This factorization is unique (ignoring order of factors).",
+    "difficulty": "basic",
+    "tags": ["prime factorization", "unique factorization", "fundamental theorem"]
+  },
+  {
+    "id": "nt_008",
+    "topic": "number_theory",
+    "subtopic": "prime_numbers",
+    "title": "Tests for Primality",
+    "content": "To check if a number n is prime, it suffices to test divisibility by all primes up to the square root of n. If no prime p with p <= sqrt(n) divides n, then n is prime. This is because if n = a * b with a <= b, then a <= sqrt(n). This drastically reduces the number of checks needed.",
+    "formula_latex": "n \\text{ is prime if } \\nexists \\, p \\leq \\sqrt{n} \\text{ such that } p \\mid n, \\text{ where } p \\text{ is prime}",
+    "example": "Is 97 prime? sqrt(97) ~ 9.85, so check primes 2, 3, 5, 7. None divide 97, so 97 is prime.",
+    "difficulty": "basic",
+    "tags": ["primality test", "prime check", "trial division"]
+  },
+  {
+    "id": "nt_009",
+    "topic": "number_theory",
+    "subtopic": "prime_numbers",
+    "title": "Infinitude of Primes and Prime Counting",
+    "content": "There are infinitely many prime numbers (Euclid's theorem). The proof proceeds by contradiction: if p1, p2, ..., pn were all primes, then N = p1*p2*...*pn + 1 is not divisible by any pi, contradicting the assumption. The Prime Number Theorem states that the number of primes up to n, denoted pi(n), is approximately n / ln(n).",
+    "formula_latex": "\\pi(n) \\sim \\frac{n}{\\ln n} \\quad \\text{as } n \\to \\infty",
+    "example": "pi(100) = 25 (there are 25 primes up to 100). The approximation gives 100/ln(100) ~ 100/4.605 ~ 21.7.",
+    "difficulty": "intermediate",
+    "tags": ["infinitude of primes", "euclid proof", "prime counting function", "prime number theorem"]
+  },
+  {
+    "id": "nt_010",
+    "topic": "number_theory",
+    "subtopic": "modular_arithmetic",
+    "title": "Congruences and Basic Properties",
+    "content": "We say a is congruent to b modulo m (written a ≡ b (mod m)) if m divides (a - b). Key properties: (1) Reflexive: a ≡ a (mod m). (2) Symmetric: a ≡ b implies b ≡ a. (3) Transitive: a ≡ b and b ≡ c implies a ≡ c. Congruences can be added, subtracted, and multiplied: if a ≡ b and c ≡ d (mod m), then a + c ≡ b + d and a*c ≡ b*d (mod m).",
+    "formula_latex": "a \\equiv b \\pmod{m} \\iff m \\mid (a - b)",
+    "example": "17 ≡ 2 (mod 5) because 5 | (17 - 2) = 15. Also, 17 + 8 = 25 ≡ 2 + 3 = 5 ≡ 0 (mod 5).",
+    "difficulty": "basic",
+    "tags": ["congruence", "modular arithmetic", "equivalence relation"]
+  },
+  {
+    "id": "nt_011",
+    "topic": "number_theory",
+    "subtopic": "modular_arithmetic",
+    "title": "Solving Linear Congruences",
+    "content": "The linear congruence ax ≡ b (mod m) has a solution if and only if gcd(a, m) divides b. If d = gcd(a, m) divides b, the congruence has exactly d incongruent solutions modulo m. When gcd(a, m) = 1, there is a unique solution modulo m, found by computing the modular inverse of a.",
+    "formula_latex": "ax \\equiv b \\pmod{m} \\text{ has solution } \\iff \\gcd(a, m) \\mid b",
+    "example": "Solve 3x ≡ 6 (mod 9): gcd(3, 9) = 3, and 3 | 6, so solutions exist. Dividing by 3: x ≡ 2 (mod 3). Solutions mod 9: x = 2, 5, 8.",
+    "difficulty": "intermediate",
+    "tags": ["linear congruence", "modular inverse", "solving congruences"]
+  },
+  {
+    "id": "nt_012",
+    "topic": "number_theory",
+    "subtopic": "modular_arithmetic",
+    "title": "Chinese Remainder Theorem",
+    "content": "If m1, m2, ..., mk are pairwise coprime positive integers, then the system of simultaneous congruences x ≡ a1 (mod m1), x ≡ a2 (mod m2), ..., x ≡ ak (mod mk) has a unique solution modulo M = m1*m2*...*mk. This theorem is widely used in JEE problems involving remainders and in cryptography.",
+    "formula_latex": "x \\equiv a_i \\pmod{m_i}, \\quad i = 1, 2, \\ldots, k \\implies \\text{unique } x \\pmod{M}, \\; M = \\prod m_i",
+    "example": "Find x: x ≡ 2 (mod 3), x ≡ 3 (mod 5). M = 15. Testing: x = 8 gives 8 mod 3 = 2 and 8 mod 5 = 3. So x ≡ 8 (mod 15).",
+    "difficulty": "advanced",
+    "tags": ["chinese remainder theorem", "simultaneous congruences", "CRT"]
+  },
+  {
+    "id": "nt_013",
+    "topic": "number_theory",
+    "subtopic": "eulers_theorem",
+    "title": "Euler's Totient Function",
+    "content": "Euler's totient function phi(n) counts the number of integers from 1 to n that are coprime to n. For a prime p, phi(p) = p - 1. For a prime power, phi(p^k) = p^k - p^(k-1). For general n with prime factorization n = p1^a1 * p2^a2 * ... * pk^ak, the totient is computed using the product formula. This function is multiplicative: phi(ab) = phi(a)*phi(b) when gcd(a,b) = 1.",
+    "formula_latex": "\\phi(n) = n \\prod_{p \\mid n} \\left(1 - \\frac{1}{p}\\right)",
+    "example": "phi(12) = 12 * (1 - 1/2) * (1 - 1/3) = 12 * 1/2 * 2/3 = 4. The integers coprime to 12 in {1,...,12} are {1, 5, 7, 11}.",
+    "difficulty": "intermediate",
+    "tags": ["euler totient", "phi function", "coprime count", "multiplicative function"]
+  },
+  {
+    "id": "nt_014",
+    "topic": "number_theory",
+    "subtopic": "eulers_theorem",
+    "title": "Euler's Theorem",
+    "content": "If a and n are coprime positive integers (gcd(a, n) = 1), then a raised to the power phi(n) is congruent to 1 modulo n. This generalizes Fermat's Little Theorem to composite moduli and is fundamental in RSA cryptography and competitive math for finding remainders of large powers.",
+    "formula_latex": "a^{\\phi(n)} \\equiv 1 \\pmod{n}, \\quad \\text{when } \\gcd(a, n) = 1",
+    "example": "Find the remainder of 7^222 mod 10. phi(10) = 4, gcd(7,10) = 1, so 7^4 ≡ 1 (mod 10). 222 = 4(55) + 2, so 7^222 ≡ 7^2 = 49 ≡ 9 (mod 10).",
+    "difficulty": "advanced",
+    "tags": ["euler theorem", "large powers", "remainder finding", "coprime"]
+  },
+  {
+    "id": "nt_015",
+    "topic": "number_theory",
+    "subtopic": "eulers_theorem",
+    "title": "Fermat's Little Theorem",
+    "content": "If p is a prime number and a is an integer not divisible by p, then a^(p-1) ≡ 1 (mod p). Equivalently, for any integer a, a^p ≡ a (mod p). This is a special case of Euler's theorem (since phi(p) = p - 1 for prime p) and is extensively used in JEE for computing remainders and in primality testing.",
+    "formula_latex": "a^{p-1} \\equiv 1 \\pmod{p}, \\quad \\text{when } p \\nmid a \\text{ and } p \\text{ is prime}",
+    "example": "Find remainder of 2^100 mod 13. By Fermat: 2^12 ≡ 1 (mod 13). 100 = 12(8) + 4, so 2^100 ≡ 2^4 = 16 ≡ 3 (mod 13).",
+    "difficulty": "intermediate",
+    "tags": ["fermat little theorem", "prime modulus", "remainder", "powers modulo prime"]
+  },
+  {
+    "id": "nt_016",
+    "topic": "number_theory",
+    "subtopic": "mathematical_induction",
+    "title": "Principle of Mathematical Induction",
+    "content": "Mathematical induction is a proof technique for statements P(n) defined for all natural numbers n >= n0. It consists of two steps: (1) Base case: Prove P(n0) is true. (2) Inductive step: Assume P(k) is true for some arbitrary k >= n0 (inductive hypothesis), then prove P(k+1) is true. If both steps are established, P(n) holds for all n >= n0.",
+    "formula_latex": "P(n_0) \\text{ true}, \\quad P(k) \\Rightarrow P(k+1) \\quad \\implies \\quad P(n) \\text{ true } \\forall \\, n \\geq n_0",
+    "example": "Prove 1 + 2 + ... + n = n(n+1)/2. Base: n=1, LHS = 1, RHS = 1(2)/2 = 1. Inductive step: assume sum to k = k(k+1)/2, then sum to k+1 = k(k+1)/2 + (k+1) = (k+1)(k+2)/2.",
+    "difficulty": "basic",
+    "tags": ["mathematical induction", "proof technique", "base case", "inductive step"]
+  },
+  {
+    "id": "nt_017",
+    "topic": "number_theory",
+    "subtopic": "mathematical_induction",
+    "title": "Strong (Complete) Induction",
+    "content": "Strong induction is a variant where the inductive hypothesis assumes P(n0), P(n0+1), ..., P(k) are all true (not just P(k)) and then proves P(k+1). Strong induction is logically equivalent to standard induction but is more natural for proofs where P(k+1) depends on multiple earlier cases, such as proving the Fundamental Theorem of Arithmetic.",
+    "formula_latex": "P(n_0), \\; \\left[\\forall j \\; (n_0 \\leq j \\leq k) : P(j)\\right] \\Rightarrow P(k+1) \\quad \\implies \\quad P(n) \\; \\forall \\, n \\geq n_0",
+    "example": "Prove every integer n >= 2 is a product of primes. Base: 2 is prime. Inductive step: assume all integers from 2 to k are products of primes. If k+1 is prime, done. Otherwise k+1 = a*b with 2 <= a, b <= k, and by hypothesis both are products of primes, so k+1 is too.",
+    "difficulty": "intermediate",
+    "tags": ["strong induction", "complete induction", "proof technique"]
+  },
+  {
+    "id": "nt_018",
+    "topic": "number_theory",
+    "subtopic": "mathematical_induction",
+    "title": "Well-Ordering Principle",
+    "content": "Every non-empty subset of the positive integers has a least element. This principle is logically equivalent to the Principle of Mathematical Induction and is often used in proofs by contradiction in number theory. To prove a property holds for all positive integers, assume the set of counterexamples is non-empty; by well-ordering it has a smallest element, and deriving a contradiction completes the proof.",
+    "formula_latex": "S \\subseteq \\mathbb{Z}^+, \\; S \\neq \\emptyset \\implies \\exists \\, m \\in S : m \\leq s \\; \\forall \\, s \\in S",
+    "example": "Prove there is no positive integer between 0 and 1. Assume S = {n in Z+ : 0 < n < 1} is non-empty. By well-ordering, S has a least element m. Then m^2 < m and 0 < m^2, so m^2 is in S, contradicting m being least.",
+    "difficulty": "advanced",
+    "tags": ["well ordering", "least element", "proof by contradiction"]
+  },
+  {
+    "id": "nt_019",
+    "topic": "number_theory",
+    "subtopic": "prime_numbers",
+    "title": "GCD and LCM via Prime Factorization",
+    "content": "Given the prime factorizations of two numbers a and b, the GCD is obtained by taking the minimum exponent of each common prime factor, and the LCM is obtained by taking the maximum exponent of each prime factor appearing in either number. This method connects prime factorization to GCD/LCM computation directly.",
+    "formula_latex": "\\gcd(a,b) = \\prod p_i^{\\min(\\alpha_i, \\beta_i)}, \\quad \\text{lcm}(a,b) = \\prod p_i^{\\max(\\alpha_i, \\beta_i)}",
+    "example": "a = 60 = 2^2 * 3 * 5, b = 45 = 3^2 * 5. gcd = 2^0 * 3^1 * 5^1 = 15, lcm = 2^2 * 3^2 * 5^1 = 180.",
+    "difficulty": "intermediate",
+    "tags": ["prime factorization", "gcd", "lcm", "min max exponents"]
+  },
+  {
+    "id": "nt_020",
+    "topic": "number_theory",
+    "subtopic": "modular_arithmetic",
+    "title": "Wilson's Theorem",
+    "content": "An integer p >= 2 is prime if and only if (p-1)! ≡ -1 (mod p). Equivalently, (p-1)! + 1 is divisible by p when p is prime. This theorem provides a necessary and sufficient condition for primality, though it is not computationally efficient for large numbers. It is frequently used in JEE/olympiad problems involving factorials and primes.",
+    "formula_latex": "(p - 1)! \\equiv -1 \\pmod{p} \\iff p \\text{ is prime}",
+    "example": "For p = 5: (5-1)! = 4! = 24. 24 mod 5 = 4 = 5 - 1 ≡ -1 (mod 5). Confirmed. For p = 4 (not prime): 3! = 6, 6 mod 4 = 2, which is not -1 mod 4.",
+    "difficulty": "advanced",
+    "tags": ["wilson theorem", "factorial", "primality", "prime test"]
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "question": "Solve x^2 - 5x + 6 = 0",
+    "answer": "[2, 3]",
+    "topic": "algebra"
+  },
+  {
+    "question": "Factor x^2 + 7x + 12",
+    "answer": "(x + 3)*(x + 4)",
+    "topic": "algebra"
+  },
+  {
+    "question": "Simplify (x^2 - 9) / (x - 3)",
+    "answer": "x + 3",
+    "topic": "algebra"
+  },
+  {
+    "question": "Solve 2x + 3 = 11",
+    "answer": "4",
+    "topic": "equations"
+  },
+  {
+    "question": "Solve 3x - 7 = 2x + 5",
+    "answer": "12",
+    "topic": "equations"
+  },
+  {
+    "question": "Solve the system of equations: x + y = 10, x - y = 4",
+    "answer": "{x: 7, y: 3}",
+    "topic": "equations"
+  },
+  {
+    "question": "Find the derivative of x^3 + 2x^2 - 5x + 1",
+    "answer": "3*x**2 + 4*x - 5",
+    "topic": "derivatives"
+  },
+  {
+    "question": "Find the derivative of sin(x) * cos(x)",
+    "answer": "cos(2*x)",
+    "topic": "derivatives",
+    "alternates": ["-sin(x)**2 + cos(x)**2", "2*cos(x)**2 - 1"]
+  },
+  {
+    "question": "Find the derivative of e^(2x)",
+    "answer": "2*exp(2*x)",
+    "topic": "derivatives"
+  },
+  {
+    "question": "Find the derivative of ln(x^2 + 1)",
+    "answer": "2*x/(x**2 + 1)",
+    "topic": "derivatives"
+  },
+  {
+    "question": "Integrate x^2",
+    "answer": "x**3/3",
+    "topic": "integrals"
+  },
+  {
+    "question": "Integrate sin(x)",
+    "answer": "-cos(x)",
+    "topic": "integrals"
+  },
+  {
+    "question": "Integrate 1/x",
+    "answer": "log(x)",
+    "topic": "integrals"
+  },
+  {
+    "question": "Integrate e^x",
+    "answer": "exp(x)",
+    "topic": "integrals"
+  },
+  {
+    "question": "Integrate 2x + 3",
+    "answer": "x**2 + 3*x",
+    "topic": "integrals"
+  },
+  {
+    "question": "Find the limit of (x^2 - 1)/(x - 1) as x approaches 1",
+    "answer": "2",
+    "topic": "calculus"
+  },
+  {
+    "question": "Find the limit of sin(x)/x as x approaches 0",
+    "answer": "1",
+    "topic": "calculus"
+  },
+  {
+    "question": "Find the second derivative of x^4 - 3x^2 + 2x",
+    "answer": "12*x**2 - 6",
+    "topic": "calculus"
+  },
+  {
+    "question": "Simplify sin^2(x) + cos^2(x)",
+    "answer": "1",
+    "topic": "trigonometry"
+  },
+  {
+    "question": "Simplify tan(x) * cos(x)",
+    "answer": "sin(x)",
+    "topic": "trigonometry"
+  },
+  {
+    "question": "Solve sin(x) = 1/2 for x in [0, 2*pi)",
+    "answer": "[pi/6, 5*pi/6]",
+    "topic": "trigonometry"
+  },
+  {
+    "question": "Expand (a + b)^3",
+    "answer": "a**3 + 3*a**2*b + 3*a*b**2 + b**3",
+    "topic": "algebra"
+  },
+  {
+    "question": "Find the integral of cos(x) from 0 to pi/2",
+    "answer": "1",
+    "topic": "integrals"
+  },
+  {
+    "question": "Differentiate x*e^x with respect to x",
+    "answer": "(x + 1)*exp(x)",
+    "topic": "derivatives"
+  },
+  {
+    "question": "Solve x^3 - 6x^2 + 11x - 6 = 0",
+    "answer": "[1, 2, 3]",
+    "topic": "equations"
+  }
+]
