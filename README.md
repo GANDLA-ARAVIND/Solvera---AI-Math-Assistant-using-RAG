@@ -136,9 +136,13 @@ This project is licensed under the MIT License.
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 
+**SRI RAM YADAV**
+**ARAVIND GANDLA**
 **Nitish Kumar Reddy**
+**J.SAI RAM**
+
 B.Tech CSE (AI & ML)
 Malla Reddy University
 
